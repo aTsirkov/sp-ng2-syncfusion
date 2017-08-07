@@ -30,7 +30,6 @@
     <Content Include="src\app\forms\catalog\catalog.component.html" />
     <Content Include="src\app\forms\home\home.component.css" />
     <Content Include="src\app\forms\home\home.component.html" />
-    <Content Include="src\app\forms\menupanel\panelmenu.component.html" />
     <Content Include="src\app\forms\orders\home.component.css" />
     <Content Include="src\app\forms\orders\home.component.html" />
     <Content Include="src\app\forms\price\home.component.css" />
@@ -48,7 +47,6 @@
     <TypeScriptCompile Include="src\app\forms\catalog\catalog.component.ts" />
     <TypeScriptCompile Include="src\app\forms\ej.grid.detail-template.ts" />
     <TypeScriptCompile Include="src\app\forms\home\home.component.ts" />
-    <TypeScriptCompile Include="src\app\forms\menupanel\panelmenu.component.ts" />
     <TypeScriptCompile Include="src\app\forms\orders\home.component.ts" />
     <TypeScriptCompile Include="src\app\forms\price\home.component.ts" />
     <TypeScriptCompile Include="src\app\forms\rtk-list\rtk-list.component.ts" />
@@ -65,7 +63,6 @@
     <TypeScriptCompile Include="src\app\app.module.ts" />
     <TypeScriptCompile Include="src\app\app.routes.ts" />
     <Content Include="src\deps\default.css" />
-    <TypeScriptCompile Include="src\app\forms\grid\grid.component.ts" />
     <Content Include="src\app\home\home.component.html" />
     <TypeScriptCompile Include="src\app\home\home.component.ts" />
     <Content Include="src\deps\images\waitingpopup.gif" />
@@ -78,9 +75,7 @@
     <Folder Include="src\app\entities\" />
     <Folder Include="src\app\forms\" />
     <Folder Include="src\app\forms\catalog\" />
-    <Folder Include="src\app\forms\grid\" />
     <Folder Include="src\app\forms\home\" />
-    <Folder Include="src\app\forms\menupanel\" />
     <Folder Include="src\app\forms\rtk-list\" />
     <Folder Include="src\app\forms\rtk-objects\" />
     <Folder Include="src\app\forms\orders\" />
