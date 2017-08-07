@@ -53,7 +53,7 @@
     <TypeScriptCompile Include="src\app\forms\rtk-objects\rtk-objects.component.ts" />
     <TypeScriptCompile Include="src\app\forms\rtk\rtk.component.ts" />
     <TypeScriptCompile Include="src\app\sharepoint\sharepoint.service.ts" />
-    <TypeScriptCompile Include="src\app\sharepoint\sharepoint.settings.ts" />
+    <Compile Include="config\sharepoint.settings.js" />
     <TypeScriptCompile Include="src\main.ts" />
     <TypeScriptCompile Include="src\polyfills.ts" />
     <TypeScriptCompile Include="src\vendor.ts" />

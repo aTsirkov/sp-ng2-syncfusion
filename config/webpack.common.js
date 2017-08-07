@@ -4,6 +4,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var helpers = require('./helpers');
 var path = require('path');
 var SPSaveWebpackPlugin = require('spsave-webpack-plugin');
+var SpS = require('./sharepoint.settings');
 
 module.exports = {
   entry: {
@@ -69,19 +70,9 @@ module.exports = {
     new ExtractTextPlugin('[name].css'),
 
     new SPSaveWebpackPlugin({
-        "coreOptions": {
-            "checkin": true,
-            "checkinType": 1,
-            "siteUrl": "http://s502as-its-sp01/sites/RTMonitor/"
-        },
-        "credentialOptions": {
-            username: 'tsirkovaa',
-            password: 'qwe12345678-=',
-            domain: 'sibur'
-        },
-        "fileOptions": {
-            "folder": "SiteAssets/SyncFusion"
-        }
+        "coreOptions": SpS.coreOptions,
+        "credentialOptions": SpS.credentialOptions,
+        "fileOptions": SpS.fileOptions
     })
 
   ]
