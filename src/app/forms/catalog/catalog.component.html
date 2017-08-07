@@ -1,0 +1,13 @@
+﻿<h3>Каталог </h3>
+
+<ej-grid [allowPaging]="true" [allowSorting]="true" [dataSource]="gridData"
+         [allowGrouping]="true" [groupSettings.groupedColumns]="groupedColumns"
+         [editSettings]="editsettings" [toolbarSettings]="toolbarsettings"
+         [enableRowHover]="true" [columns]="columnssettings">
+    <e-columns>
+        <e-column field="ID" headerText="ID" width="75" textAlign="center"></e-column>
+        <e-column field="Title" headerText="Наименование" width="200"></e-column>
+        <e-column field="ACBNSI" headerText="Код Контрагента в АСВ НСИ" width="75" textAlign="center"></e-column>
+        <e-column field="ESUID" headerText="Код Контрагента ЕСУИД" width="75" textAlign="center"></e-column>
+    </e-columns>
+</ej-grid>

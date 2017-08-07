@@ -1,0 +1,57 @@
+﻿<h3>Экземпляры РТК</h3>
+<!--
+<script id="formtemplate" type="text/template">
+    <table>
+        <tr>
+            <td>OrderID</td>
+            <td>
+                <input id="OrderID" name="OrderID" value="" disabled="disabled" />
+            </td>
+        </tr>
+        <tr>
+            <td>CustomerID</td>
+            <td>
+                <input id="CustomerID" name="CustomerID" value="" />
+            </td>
+        </tr>
+        <tr>
+            <td>EmployeeID</td>
+            <td>
+                <input id="EmployeeID" name="EmployeeID" value="" />
+            </td>
+        </tr>
+    </table>
+</script> 
+-->
+<ej-grid #grid allowPaging="true" allowSorting="true" allowResizing="true" [dataSource]="gridData"
+         allowGrouping="true" [groupSettings.groupedColumns]="groupedColumns"
+         [editSettings]="editsettings" [toolbarSettings]="toolbarsettings"
+         [enableRowHover]="true" [columns]="columnssettings"
+         (actionComplete)="onActionComplete($event)">
+    <e-columns>
+        <e-column field="ID" headerText="ID" [isPrimaryKey]="true" width="50" [textAlign]="center"></e-column>
+        <e-column field="Title" headerText="Наименование" [textAlign]="left"></e-column>
+        <!-- <e-column field="ServiceCatalogId" headerText="Услуга" [textAlign]="left"></e-column>
+        <e-column field="RegionalTechnicalCenterId" headerText="РТЦ - владелец договора"
+                  foreignKeyField="ID" foreignKeyValue="Title" [dataSource]="rtc"></e-column>
+        <e-column field="CompanyCustomerId" headerText="Заказчик"
+                  foreignKeyField="ID" foreignKeyValue="Title" [dataSource]="customers"></e-column>>
+        <e-column field="Agreement" headerText="Код договора"></e-column>
+        <e-column field="OperationAmount" headerText="Сумма по операциям"></e-column>
+        <e-column field="MaterialAmount" headerText="Сумма по материалам"></e-column>
+        <e-column field="SubcontractingAmount" headerText="Сумма по субподряду"></e-column>
+        <e-column field="ActiveAmount" headerText="Сумма по активам"></e-column>
+        <e-column field="TotalAmount" headerText="Сумма по РТК"></e-column>
+        <e-column field="Status" headerText="Статус"></e-column>
+        <e-column field="Unified" headerText="Унифицированна"></e-column>-->
+
+    </e-columns>
+    <ng-template #formtemplate e-gdtemplate let-data>
+        <div class="test">
+            <p>ffffffffff</p>
+            <input ej-button [text]='data.Title' />
+        </div>
+    </ng-template>
+
+</ej-grid>
+

@@ -1,0 +1,74 @@
+﻿    <div id="navdraw">
+        <div id="container">
+            <div id="butdrawer" class="drawericon e-icon">
+            </div>
+        </div>
+    </div>
+<div class="navwrapper">
+    <div ej-navigationdrawer id="navpane" targetId="butdrawer" contentid="treeview" direction="left" position="normal" type="overlay"
+         [enableListView]="enablelistview" [listViewSettings]="lvset">
+        <div class="treeview" id="treeview" style="width:300px">
+            <ej-treeview>
+                <ul>
+                    <li onclick="location.href = '#home'; $('#navpane').ejNavigationDrawer('close');">Главная</li>
+                    <li>
+                        Справочники
+                        <ul>
+                            <li onclick="location.href = '#customers'; $('#navpane').ejNavigationDrawer('close');">Заказчики</li>
+                            <li>Виды объектов обслуживания</li>
+                            <li>Направления деятельности</li>
+                        </ul>
+                    </li>
+                    <li>Каталог услуг</li>
+                    <li>Унифицированная РТК</li>
+                    <li>
+                        РТК
+                        <ul>
+                            <li onclick="location.href = '#RTK'; $('#navpane').ejNavigationDrawer('close');">Экземпляры РТК</li>
+                            <li>Прайс</li>
+                        </ul>
+                    </li>
+                    <li>Заказы</li>
+                </ul>
+            </ej-treeview>
+        </div>
+    </div>
+
+    <main>
+        <router-outlet></router-outlet>
+    </main>
+</div>
+
+<style>
+    .header {
+        background: none repeat scroll 0 0 blue;
+        height: 45px;
+        width: 100%;
+    }
+
+    .navwrapper {
+        position: relative;
+        height: calc(100vh - 45px);
+    }
+
+    .e-header {
+        padding-top: 8px;
+        padding-left: 0px;
+    }
+
+    .drawericon {
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 32px;
+        width: 32px;
+        background-size: 100% 100%;
+        padding-right: 10px;
+        cursor: pointer;
+    }
+
+        .drawericon:before {
+            content: "\e76b";
+            font-size: 28px;
+            height: 26px;
+        }
+</style>
